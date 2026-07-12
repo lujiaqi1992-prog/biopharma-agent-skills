@@ -1,0 +1,4 @@
+interface:
+  display_name: "新药管线资产战略审视"
+  short_description: "四象限压力测试新药管线，识别虚假创新并制定九十天去风险战略"
+  default_prompt: "使用 $drug-asset-strategy-review 对我的新药管线开展逐题压力测试，并在信息充分后输出战略评估报告。"
