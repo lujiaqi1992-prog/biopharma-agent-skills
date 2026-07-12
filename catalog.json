@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "name": "biopharma-agent-skills",
+  "language": ["zh-CN", "en"],
+  "license": "CC-BY-4.0",
+  "skills": [
+    {
+      "name": "disease-area-research",
+      "path": "skills/disease-area-research",
+      "entrypoint": "skills/disease-area-research/SKILL.md",
+      "required_input": ["disease_name"],
+      "optional_capabilities": ["web_search", "browser", "pharma_data_connector", "clinical_trials_connector", "patent_connector"]
+    },
+    {
+      "name": "drug-asset-strategy-review",
+      "path": "skills/drug-asset-strategy-review",
+      "entrypoint": "skills/drug-asset-strategy-review/SKILL.md",
+      "required_input": ["asset_or_project_context"],
+      "optional_capabilities": ["web_search", "browser", "clinical_trials_connector", "regulatory_connector", "patent_connector"]
+    }
+  ]
+}
