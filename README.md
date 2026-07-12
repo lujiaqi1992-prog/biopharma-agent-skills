@@ -13,7 +13,7 @@
 
 仓库地址：<https://github.com/lujiaqi1992-prog/biopharma-agent-skills>
 
-- [下载标准 Agent Skills 安装包](./biopharma-agent-skills.zip)
+- [下载标准 Agent Skills 安装包](https://github.com/lujiaqi1992-prog/biopharma-agent-skills/archive/refs/heads/main.zip)
 - [直接读取疾病领域调研 skill](./disease-area-research.md)
 - [直接读取管线资产战略评估 skill](./drug-asset-strategy-review.md)
 
@@ -27,11 +27,11 @@ git clone https://github.com/lujiaqi1992-prog/biopharma-agent-skills.git
 
 ```bash
 curl -L -o biopharma-agent-skills.zip \
-  https://github.com/lujiaqi1992-prog/biopharma-agent-skills/raw/refs/heads/main/biopharma-agent-skills.zip
+  https://github.com/lujiaqi1992-prog/biopharma-agent-skills/archive/refs/heads/main.zip
 unzip biopharma-agent-skills.zip
 mkdir -p ~/.codex/skills
-cp -R biopharma-agent-skills/skills/disease-area-research ~/.codex/skills/
-cp -R biopharma-agent-skills/skills/drug-asset-strategy-review ~/.codex/skills/
+cp -R biopharma-agent-skills-main/skills/disease-area-research ~/.codex/skills/
+cp -R biopharma-agent-skills-main/skills/drug-asset-strategy-review ~/.codex/skills/
 ```
 
 重启或新建任务后，可直接说：
@@ -70,12 +70,20 @@ cp -R biopharma-agent-skills/skills/drug-asset-strategy-review ~/.codex/skills/
 ├── AGENTS.md
 ├── README.md
 ├── LICENSE
+├── catalog.json
 ├── disease-area-research.md
 ├── drug-asset-strategy-review.md
-└── biopharma-agent-skills.zip
+└── skills
+    ├── disease-area-research
+    │   ├── SKILL.md
+    │   ├── agents/openai.yaml
+    │   └── references/
+    └── drug-asset-strategy-review
+        ├── SKILL.md
+        └── agents/openai.yaml
 ```
 
-ZIP 内保留标准目录结构：`skills/<skill-name>/SKILL.md`、`agents/openai.yaml` 和按需加载的 `references/`。
+GitHub 的 Download ZIP 与 `git clone` 均保留标准目录结构：`skills/<skill-name>/SKILL.md`、`agents/openai.yaml` 和按需加载的 `references/`。
 
 ## 重要边界
 
