@@ -1,0 +1,4 @@
+interface:
+  display_name: "疾病领域调研"
+  short_description: "面向药企立项、BD与IP决策的创新药疾病领域深度调研"
+  default_prompt: "使用 $disease-area-research 调研我指定的疾病领域，并输出全球及中国创新药管线、近两年BD交易与技术展望的五部分专业综述报告。"
