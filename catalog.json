@@ -12,6 +12,14 @@
       "optional_capabilities": ["web_search", "browser", "pharma_data_connector", "clinical_trials_connector", "patent_connector"]
     },
     {
+      "name": "disease-area-research-innosight",
+      "path": "skills/disease-area-research-innosight",
+      "entrypoint": "skills/disease-area-research-innosight/SKILL.md",
+      "required_input": ["disease_name"],
+      "required_capabilities": ["innosight_mcp"],
+      "optional_capabilities": ["web_search", "browser", "clinical_trials_connector", "regulatory_connector", "patent_connector"]
+    },
+    {
       "name": "drug-asset-strategy-review",
       "path": "skills/drug-asset-strategy-review",
       "entrypoint": "skills/drug-asset-strategy-review/SKILL.md",
